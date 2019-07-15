@@ -1,3 +1,8 @@
 aws/node_modules/
 .DS_Store
 
+docker/
+!docker/Dockerfile
+!docker/docker-compose.yml
+!docker/Gemfile
+!docker/Gemfile.lock
