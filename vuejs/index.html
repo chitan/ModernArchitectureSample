@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue Counter</title>
+</head>
+<body>
+    <div id="app">
+        <counter/>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script>
+        var counter = Vue.component('counter',{
+            data:function(){
+                return{
+                    counter: 0
+                };
+            },
+            methods:{
+                doAction:function(event){
+                    this.counter++;
+                }
+            },
+            template:'<p v-on:click="doAction">clicked: {{ counter }}.</p>'
+        });
+        var app = new Vue({
+            el: '#app'
+        });
+    </script>
+</body>
+</html>
