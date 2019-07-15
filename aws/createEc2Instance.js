@@ -9,7 +9,7 @@ var params = {
     KeyName: 'dev',
     SecurityGroupIds: ['sg-dd594eb9'],
     MinCount: 1,
-    MaxCount:1
+    MaxCount: 1
 };
 
 ec2.runInstances(params, function(err, data){
