@@ -1,4 +1,4 @@
 # ModernArchitectureSample
 
 ## Docker start
-docker-compose run web rails new .
+> docker-compose run app rails new .
